@@ -255,9 +255,38 @@ body {
     color: #EFA501;
 }
 
-.wrapper-card-1 {
-    width: 370px;
-    height: 531px;
+/* Контейнер для всех карточек */
+.card-container {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 135px;
+}
 
+
+/* Контейнер для карточки */
+.wrapper-card {
+    display: grid;
+    grid-template-columns: 20px 100px 20px ;
+    grid-template-rows: 20px 30px 30px 100px 30px 20px;
     border-radius: 50px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper-card-image1 {
+    background-image: url("../images/cardTour1.jpg"); 
+    background-color: #5889b4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 531px;
+    padding-top: 51px;
+    box-sizing: border-box;
+    padding-bottom: 82px;
+}
+
+.travel-list-item-title {
+    text-decoration: none;
 }
