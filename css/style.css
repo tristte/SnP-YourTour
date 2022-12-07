@@ -269,7 +269,7 @@ body {
 /* Контейнер для карточки */
 .wrapper-card {
     display: grid;
-    grid-template-rows: 20px 212px min-content auto min-content min-content 20px ;
+    grid-template-rows: 50px 86px 16px 24px 305px 28px 50px;
     grid-template-columns: 50px 270px 50px;
 
     border-radius: 50px;
@@ -279,14 +279,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 531px;
-    padding-top: 51px;
     box-sizing: border-box;
-    padding-bottom: 82px;
 }
 
+    /* Первая карточка */
 .wrapper-card-image1 {
     background-image: url("../images/cardTour1.jpg"); 
     background-color: #5889b4;
+
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .travel-list-item {
@@ -300,10 +301,78 @@ body {
 
 .travel-list-item-description {
     grid-column: 2/2;
-    grid-row: 3/3;
+    grid-row: 4/4;
 }
 
 .travel-list-item-button {
     grid-column: 2/2;
-    grid-row: 5/5;
+    grid-row: 6/6;
+}
+
+.travel-list-item-title {
+    width: 270px;
+    height: 86px;
+
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+
+    color: #ffffff;
+
+    margin: 0;
+}
+
+.travel-list-item-description {
+    width: 270px;
+    height: 24px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+
+    color: #ffffff;
+}
+
+.travel-list-item-button {
+    text-decoration: none;
+
+    width: 120px;
+    height: 28px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+
+    color: #ffffff;
+}
+
+/* Вторая карточка */
+.wrapper-card-image2 {
+    background-image: url("../images/cardTour2.jpg"); 
+    background-color: #a58276;
+}
+
+/* Третья карточка */
+.wrapper-card-image3 {
+    background-image: url("../images/cardTour3.jpg"); 
+    background-color: #ebe8ef;
+}
+
+/* Четвертая карточка */
+.wrapper-card-image4 {
+    background-image: url("../images/cardTour4.jpg"); 
+    background-color: #24211c;
+}
+/* Пятая карточка */
+.wrapper-card-image5 {
+    background-image: url("../images/cardTour5.jpg"); 
+    background-color: #e1e9ec;
+}
+
+/* Шестая карточка */
+.wrapper-card-image6 {
+    background-image: url("../images/cardTour6.jpg"); 
+    background-color: #00444b;
 }
