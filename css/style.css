@@ -257,12 +257,18 @@ body {
 
 /* Контейнер для всех карточек */
 .card-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+}
+
+.travel-list {
     display: grid;
     grid-template-columns: 370px 370px 370px;
     gap: 30px;
     margin: 0;
     padding: 0;
-    /* margin-bottom: 135px; */
 }
 
 
