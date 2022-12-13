@@ -16,7 +16,7 @@
 
 html {
     /* height: 100%; */
-  }
+}
 
 
 body {
@@ -28,16 +28,14 @@ body {
 
     font-size: 20px;
     line-height: 29px;
-    color: #000000; 
+    color: #000000;
     background-color: #F9F7F4;
 
     padding: 0;
     margin: 0;
 }
 
-.header-logo {
-    
-}
+.header-logo {}
 
 .logo {
     display: block;
@@ -62,8 +60,8 @@ body {
     margin: 0 auto;
 
     /* делаем отрицательный отступ на высоту блока меню, чтобы он налез на секцию с фоном */
-    margin-bottom: -88px; 
-    
+    margin-bottom: -88px;
+
     /* без этого фон налазит на меню */
     position: relative;
 }
@@ -84,7 +82,7 @@ body {
     width: 468px;
     height: 28px;
 
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
 
     /* padding-top: 30px; */
@@ -94,7 +92,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    color:#ffffff;
+    color: #ffffff;
     list-style-type: none;
 
     /* padding-top: 30px; */
@@ -106,7 +104,7 @@ body {
 }
 
 .header-menu-item-link {
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -114,14 +112,14 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
 
     width: 155px;
     height: 28px;
 
     margin: 0;
-    
+
 }
 
 .intro {
@@ -169,7 +167,8 @@ body {
 
     font-weight: 400;
     font-size: 17px;
-    line-height: 34px; /* такая же, как высота всей кнопки, чтобы выровнялся текст по вертикали */
+    line-height: 34px;
+    /* такая же, как высота всей кнопки, чтобы выровнялся текст по вертикали */
 
     color: #1B1F2B;
     text-decoration: none;
@@ -193,9 +192,7 @@ body {
     margin-top: 55px;
 }
 
-<!-- Секция Выбери свой тур -->
-
-.tour-choice {
+< !-- Секция Выбери свой тур -->.tour-choice {
     width: 1170px;
 }
 
@@ -288,9 +285,9 @@ body {
     box-sizing: border-box;
 }
 
-    /* Первая карточка */
+/* Первая карточка */
 .wrapper-card-image1 {
-    background-image: url("../images/cardTour1.jpg"); 
+    background-image: url("../images/cardTour1.jpg");
     background-color: #5889b4;
 
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
@@ -356,30 +353,31 @@ body {
 
 /* Вторая карточка */
 .wrapper-card-image2 {
-    background-image: url("../images/cardTour2.jpg"); 
+    background-image: url("../images/cardTour2.jpg");
     background-color: #a58276;
 }
 
 /* Третья карточка */
 .wrapper-card-image3 {
-    background-image: url("../images/cardTour3.jpg"); 
+    background-image: url("../images/cardTour3.jpg");
     background-color: #ebe8ef;
 }
 
 /* Четвертая карточка */
 .wrapper-card-image4 {
-    background-image: url("../images/cardTour4.jpg"); 
+    background-image: url("../images/cardTour4.jpg");
     background-color: #24211c;
 }
+
 /* Пятая карточка */
 .wrapper-card-image5 {
-    background-image: url("../images/cardTour5.jpg"); 
+    background-image: url("../images/cardTour5.jpg");
     background-color: #e1e9ec;
 }
 
 /* Шестая карточка */
 .wrapper-card-image6 {
-    background-image: url("../images/cardTour6.jpg"); 
+    background-image: url("../images/cardTour6.jpg");
     background-color: #00444b;
 }
 
@@ -420,10 +418,10 @@ body {
 }
 
 .tour-constructor-form {
-    display:grid;
+    display: grid;
 
-    grid-template-rows: ;
-    grid-template-columns: 70px 1030px 70px;
+    grid-template-rows: 70px 104px 104px 104px 188px 64px 26px 58px 70px;
+    grid-template-columns: 70px 500px 500px 70px;
 
     column-gap: 30px;
     row-gap: 33px;
@@ -446,15 +444,76 @@ body {
     height: 986px;
 }
 
+.tour-constructor-form-label-username {
+    grid-column: 2/2;
+    grid-row: 2/2;
+
+    display: flex;
+    flex-direction: column;
+}
+
 .tour-constructor-form-input-username {
+    box-sizing: border-box;
+    
+    padding: 20px;
+    gap: 10px;
+
+    height: 68px;
+
     background: #F9F7F4;
 
     border: 1px solid #F4F0E9;
     border-radius: 10px;
+    
+    margin-top: 8px;
 }
 
 
 
+.tour-constructor-form-label-direction {
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+
+.tour-constructor-form-label-email {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+.tour-constructor-form-label-tel {
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+
+.tour-constructor-form-label-date-ot {
+    grid-column: 2/2;
+    grid-row: 4/4;
+}
+
+.tour-constructor-form-label-date-do {
+    grid-column: 3/3;
+    grid-row: 4/4;
+}
+
+.tour-constructor-form-label-comment {
+    grid-column: 2/3;
+    grid-row: 5/5;
+}
+
+.wrapper-radio {
+    grid-column: 2/2;
+    grid-row: 6/6;
+}
+
+.tour-constructor-form-label-checkbox-option {
+    grid-column: 2/3;
+    grid-row: 7/7;
+}
+
+.wrapper-button {
+    grid-column: 2/2;
+    grid-row: 8/8;
+}
 
 
 
@@ -491,4 +550,3 @@ body {
     padding-top: 30px;
     padding-bottom: 100px;
 }
-

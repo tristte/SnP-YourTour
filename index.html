@@ -146,7 +146,7 @@
                         <input class="tour-constructor-form-input-date-ot" id="date-ot" type="date" value="ДД.ММ.ГГГГ">
                     </label>
 
-                    <label class="tour-constructor-form-label-username" for="direction">Направление
+                    <label class="tour-constructor-form-label-direction" for="direction">Направление
                         <select class="tour-constructor-form-select-direction" id="direction">
                             <option value="1">Куда хотите ехать</option>
                         </select>
@@ -161,27 +161,31 @@
                         <input class="tour-constructor-form-input-date-do" id="date-do" type="date" value="ДД.ММ.ГГГГ">
                     </label>
 
-                    <label class="tour-constructor-form-label-comment" for="comment">Комментарий</label>
-                    <textarea class="tour-constructor-form-textarea-comment" id="comment" name="comment" rows="4"
-                        cols="50">
-                    </textarea>
-
-
-                    <p>Вам есть 18 лет?</p>
-                    <label class="tour-constructor-form-label-radio-yes" for="radio-yes">Да
-                        <input class="tour-constructor-form-input-radio-yes" id="radio-yes" type="radio">
+                    <label class="tour-constructor-form-label-comment" for="comment">Комментарий
+                        <textarea class="tour-constructor-form-textarea-comment" id="comment" name="comment" rows="4"
+                            cols="50">
+                        </textarea>
                     </label>
-                    <label class="tour-constructor-form-label-radio-no" for="radio-no">Нет
-                        <input class="tour-constructor-form-input-radio-no" id="radio-no" type="radio">
-                    </label>
+
+                    <div class="wrapper-radio">
+                        <p>Вам есть 18 лет?</p>
+                        <label class="tour-constructor-form-label-radio-yes" for="radio-yes">Да
+                            <input class="tour-constructor-form-input-radio-yes" id="radio-yes" type="radio">
+                        </label>
+                        <label class="tour-constructor-form-label-radio-no" for="radio-no">Нет
+                            <input class="tour-constructor-form-input-radio-no" id="radio-no" type="radio">
+                        </label>
+                    </div>
 
                     <label class="tour-constructor-form-label-checkbox-option" for="checkbox-option">
                         Нажимая кнопку, я принимаю условия <strong>Лицензионного договора</strong>
                         <input class="tour-constructor-form-input-checkbox-option" id="checkbox-option" type="checkbox">
                     </label>
 
-                    <button class="tour-constructor-form-button-submit" type="submit">Найти тур</button>
-                    <button class="tour-constructor-form-button-reset" type="reset">Сбросить</button>
+                    <div class="wrapper-button">
+                        <button class="tour-constructor-form-button-submit" type="submit">Найти тур</button>
+                        <button class="tour-constructor-form-button-reset" type="reset">Сбросить</button>
+                    </div>
 
                 </form>
             </div>
