@@ -452,24 +452,6 @@ body {
     flex-direction: column;
 }
 
-.tour-constructor-form-input-username {
-    box-sizing: border-box;
-    
-    padding: 20px;
-    gap: 10px;
-
-    height: 68px;
-
-    background: #F9F7F4;
-
-    border: 1px solid #F4F0E9;
-    border-radius: 10px;
-    
-    margin-top: 8px;
-}
-
-
-
 .tour-constructor-form-label-direction {
     grid-column: 3/3;
     grid-row: 2/2;
@@ -516,7 +498,123 @@ body {
 }
 
 
+.tour-constructor-form-input-username {
+    box-sizing: border-box;
+    
+    padding: 20px;
+    gap: 10px;
 
+    height: 68px;
+
+    background: #F9F7F4;
+
+    border: 1px solid #F4F0E9;
+    border-radius: 10px;
+    
+    margin-top: 8px;
+}
+
+.tour-constructor-form-select-direction {
+    box-sizing: border-box;
+
+    padding: 20px;
+    gap: 10px;
+
+    height: 68px;
+    width: 500px;
+
+    background: #F9F7F4;
+
+    border: 1px solid #F4F0E9;
+    border-radius: 10px;
+
+    margin-top: 8px;
+}
+
+.tour-constructor-form-input-email {
+    box-sizing: border-box;
+
+    padding: 20px;
+    gap: 10px;
+    
+    height: 68px;
+    width: 500px;
+
+    background: #F9F7F4;
+
+    border: 1px solid #F4F0E9;
+    border-radius: 10px;
+
+    margin-top: 8px;
+}
+
+.tour-constructor-form-input-tel {
+    box-sizing: border-box;
+
+    padding: 20px;
+    gap: 10px;
+    
+    height: 68px;
+    width: 500px;
+
+    background: #F9F7F4;
+
+    border: 1px solid #F4F0E9;
+    border-radius: 10px;
+
+    margin-top: 8px;
+}
+
+.tour-constructor-form-input-date-ot {
+    box-sizing: border-box;
+
+    padding: 20px;
+    gap: 10px;
+    
+    height: 68px;
+    width: 500px;
+
+    background: #F9F7F4;
+
+    border: 1px solid #F4F0E9;
+    border-radius: 10px;
+
+    margin-top: 8px;
+}
+
+.tour-constructor-form-input-date-do {
+    box-sizing: border-box;
+
+    padding: 20px;
+    gap: 10px;
+    
+    height: 68px;
+    width: 500px;
+
+    background: #F9F7F4;
+
+    border: 1px solid #F4F0E9;
+    border-radius: 10px;
+
+    margin-top: 8px;
+}
+
+.tour-constructor-form-textarea-comment {
+    box-sizing: border-box;
+
+    padding: 20px;
+    gap: 10px;
+    
+    height: 152px;
+    width: 1030px;
+
+    background: #F9F7F4;
+
+    border: 1px solid #F4F0E9;
+    border-radius: 10px;
+
+    margin-top: 8px;
+}
 /* Секция tour-reviews */
 .tour-reviews-title {
     width: 529px;
