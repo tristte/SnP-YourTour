@@ -726,3 +726,70 @@ body {
     padding-top: 30px;
     padding-bottom: 100px;
 }
+
+/* Секция Фотографии путешествий */
+
+.travel-photos-title {
+    width: 723px;
+    height: 73px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+
+    text-align: center;
+
+    color: #1B1F2B;
+
+    margin: 0 auto;
+    padding-top: 135px;
+}
+
+.travel-photos-description {
+    width: 418px;
+    height: 56px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+
+    text-align: center;
+
+    color: #A6A6A6;
+
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+
+.travel-photos-list {
+    list-style-type: none; 
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 30px;
+    gap: 30px;
+
+    width: 1920px;
+    height: 963px; */
+}
+
+.travel-photos-wide {
+    width: 443px;
+    height: 300px;
+
+    border-radius: 50px;
+}
+
+.travel-photos-narrow {
+    width: 348px;
+    height: 301px;
+
+    border-radius: 50px;
+}
