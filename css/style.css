@@ -488,15 +488,18 @@ body {
 }
 
 .tour-constructor-form-label-checkbox-option {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 7/7;
 }
 
 .wrapper-button {
     grid-column: 2/2;
     grid-row: 8/8;
-}
 
+    display:flex;
+
+    justify-content: space-between;
+}
 
 .tour-constructor-form-input-username {
     box-sizing: border-box;
@@ -644,6 +647,10 @@ body {
     margin: 0 auto;
 }
 
+.input-checkbox-option-strong {
+    color: #1B1F2B;
+}
+
 .tour-constructor-form-button-submit {
     display: flex;
 
@@ -664,7 +671,6 @@ body {
 
     color: #ffffff;
 
-    margin: 0 auto;
     padding: 0;
 
     border: none;
@@ -770,14 +776,15 @@ body {
 .travel-photos-list {
     list-style-type: none; 
 
-    /* display: flex;
-    flex-direction: column;
+    display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: 0px 30px;
+    margin: 0 auto;
     gap: 30px;
 
     width: 1920px;
-    height: 963px; */
+    height: 963px;
 }
 
 .travel-photos-wide {
