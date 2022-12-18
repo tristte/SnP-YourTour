@@ -702,8 +702,7 @@ body {
 /* Секция tour-reviews */
 .tour-reviews-title {
     width: 529px;
-    height: 146px;
-
+    
     font-weight: 700;
     font-size: 59px;
     line-height: 124%;
@@ -718,8 +717,7 @@ body {
 
 .tour-reviews-description {
     width: 418px;
-    height: 56px;
-
+    
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
@@ -732,6 +730,17 @@ body {
     padding-top: 30px;
     padding-bottom: 100px;
 }
+
+.tour-reviews-list {
+    display: flex;
+
+    margin: 0 auto;
+    padding: 0;
+
+    justify-content: center;
+    gap: 30px;
+}
+
 /* Убирает булеты */
 .tour-reviews-item {
     list-style-type: none;
@@ -739,13 +748,14 @@ body {
 
 .tour-reviews-item-description {
     width: 490px;
-    height: 252px;
-
+    
     font-weight: 700;
     font-size: 23px;
-l   line-height: 122%;
+    line-height: 122%;
 
     color: #1B1F2B;
+
+    margin: 0; 
 }
 
 .tour-reviews-name {
@@ -757,6 +767,8 @@ l   line-height: 122%;
     line-height: 122%;
 
     color: #1B1F2B;
+
+    margin: 0 auto;
 }
 
 .tour-reviews-title-tour {
@@ -770,6 +782,8 @@ l   line-height: 122%;
     letter-spacing: -0.01em;
 
     color: #A6A6A6;
+
+    margin: 0 auto;
 }
 
 .tour-reviews-foto {
@@ -786,7 +800,6 @@ l   line-height: 122%;
 
 .wrapper-reviews-name-title-foto {
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -795,7 +808,6 @@ l   line-height: 122%;
     flex-direction: column;
     justify-content: space-between;
 
-    align-items: flex-start;
     padding: 40px;
 
     width: 570px;
