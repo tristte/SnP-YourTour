@@ -192,7 +192,8 @@ body {
     margin-top: 55px;
 }
 
-< !-- Секция Выбери свой тур -->.tour-choice {
+ /* Секция Выбери свой тур  */
+.tour-choice {
     width: 1170px;
 }
 
@@ -822,8 +823,6 @@ body {
     width: 723px;
     height: 73px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 59px;
     line-height: 124%;
@@ -840,8 +839,7 @@ body {
     width: 418px;
     height: 56px;
 
-    font-family: 'Roboto';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
@@ -882,4 +880,98 @@ body {
     height: 301px;
 
     border-radius: 50px;
+}
+
+/* Секция travel-stories */
+
+.travel-stories-title {
+    width: 615px;
+    height: 73px;
+
+
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+
+    text-align: center;
+
+    color: #1B1F2B;
+
+    margin: 0 auto;
+    padding-top: 135px;
+
+}
+
+.travel-stories-description {
+    width: 418px;
+    height: 56px;
+
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+
+    text-align: center;
+
+    color: #A6A6A6;
+
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+}
+.travel-stories-list-social {
+    display: flex;
+    padding: 0px;
+    gap: 35px;
+
+    list-style-type: none;
+}
+
+.wrapper-button-list-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel-stories-button {
+    text-decoration: none;
+}
+
+.wrapper-items-advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 37px;
+}
+
+.travel-stories-items {
+    width: 1170px;
+    height: 567px;
+
+    border-radius: 50px;
+
+    list-style-type: none;
+}
+
+.travel-stories-items-background-1 {
+    background-image: url("../images/travelStory1.jpg");
+    background-color: #cec2ba;
+
+}
+
+.travel-stories-items-background-2 {
+    background-image: url("../images/travelStory2.jpg");
+    background-color: #162333;
+}
+
+.travel-stories-items-background-3 {
+    background-image: url("../images/travelStory3.jpg");
+    background-color: #c2bbc2;
+}
+
+.travel-stories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
 }
