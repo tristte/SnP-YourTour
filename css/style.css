@@ -192,6 +192,15 @@ body {
     margin-top: 55px;
 }
 
+.intro-button:hover {
+    background: #EFA501;
+    color: #ffffff;
+}
+
+.intro-button:active {
+    background: #F8E6BE;
+    color: #1B1F2B;
+}
  /* Секция Выбери свой тур  */
 .tour-choice {
     width: 1170px;
@@ -679,6 +688,16 @@ body {
     border: none;
 }
 
+.tour-constructor-form-button-submit:hover {
+    background: #3B7E7B;
+    color: #ffffff;
+}
+
+..tour-constructor-form-button-submit:active {
+    background: #627F7E;
+    color: #ffffff;
+}
+
 .tour-constructor-form-button-reset {
     display: flex;
     
@@ -702,6 +721,15 @@ body {
     border: none;
 }
 
+.tour-constructor-form-button-reset:hover {
+    background: #F1F3F2;
+    color: #286562;
+}
+
+.tour-constructor-form-button-reset:active {
+    background: #D9DFDB;
+    color: #286562;
+}
 /* Секция tour-reviews */
 .tour-reviews-title {
     width: 529px;
