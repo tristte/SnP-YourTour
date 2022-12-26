@@ -655,6 +655,33 @@ body {
     color: #A6A6A6;
 }
 
+/* Чекбокс начало */
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/checkbox-checked.svg);
+  /* background-color: #242424; */
+  content: "";
+}
+
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+  
+    background: #FFFFFF;
+    border-radius: 4px;
+  }
+
+  /* Чекбокс конец */
+
+
 .tour-constructor-form-description {
     margin: 0 auto;
 }

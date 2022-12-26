@@ -169,21 +169,32 @@
                         </textarea>
                     </label>
 
+                    <!-- Радиобаттон -->
                     <div class="wrapper-radio form-label-font">
                         <p class="tour-constructor-form-description form-label-font">Вам есть 18 лет?</p>
                         <label class="tour-constructor-form-label-radio-yes" for="radio-yes">Да
                             <input class="tour-constructor-form-input-radio-yes form-label-font" id="radio-yes"
-                                type="radio">
+                                type="radio" name="tour-constructor-radio">
+                            <span class="span-tour-constructor"></span>
                         </label>
                         <label class="tour-constructor-form-label-radio-no" for="radio-no">Нет
                             <input class="tour-constructor-form-input-radio-no form-label-font" id="radio-no"
-                                type="radio">
+                                type="radio" name="tour-constructor-radio">
+                            <span class="span-tour-constructor"></span>
                         </label>
                     </div>
 
+
+                    <!-- Чекбокс -->
                     <label class="tour-constructor-form-label-checkbox-option form-label-checkbox-font"
                         for="checkbox-option">
-                        <input class="tour-constructor-form-input-checkbox-option" id="checkbox-option" type="checkbox">
+                        <input class="tour-constructor-form-input-checkbox-option" id="checkbox-option" type="checkbox"
+                            name="tour-constructor-checkbox">
+
+                        <input class="visually-hidden control-input" type="checkbox" name="tour-constructor-checkbox"
+                            checked>
+                        <span class="control-mark"></span>
+
                         Нажимая кнопку, я принимаю условия <strong class="input-checkbox-option-strong">Лицензионного
                             договора</strong>
                     </label>
