@@ -14,6 +14,19 @@
     font-display: swap;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 html {
     /* height: 100%; */
 }
@@ -106,6 +119,20 @@ body {
 .header-menu-item-link {
     color: #ffffff;
     text-decoration: none;
+
+    position: relative; /* Относительное позиционирование */
+    display: inline-block; /* Линия на ширину текста */
+}
+
+.header-menu-item-link:hover::after {
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #FFFFFF; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: 2px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+    cursor: pointer;
 }
 
 .phone-menu-font-link {
@@ -502,6 +529,10 @@ body {
 .tour-constructor-form-label-checkbox-option {
     grid-column: 2/4;
     grid-row: 7/7;
+
+    position: relative;
+    display: block;
+    padding-left: 36px;
 }
 
 .wrapper-button {
@@ -527,6 +558,15 @@ body {
     border-radius: 10px;
     
     margin-top: 8px;
+}
+
+.tour-constructor-form-input-username:hover {
+    cursor: pointer;
+    background: #F4F0E9;
+}
+
+.tour-constructor-form-input-username:valid {
+    color: #1B1F2B;
 }
 
 .tour-constructor-form-select-direction {
@@ -656,18 +696,6 @@ body {
 }
 
 /* Чекбокс начало */
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
-  position: absolute;
-  top: 5px;
-  left: 4px;
-  width: 12px;
-  height: 10px;
-  background-image: url(../images/checkbox-checked.svg);
-  /* background-color: #242424; */
-  content: "";
-}
-
 .control-mark {
     position: absolute;
     top: 2px;
@@ -678,7 +706,18 @@ body {
     background: #FFFFFF;
     border-radius: 4px;
   }
-
+  
+  .control-input[type="checkbox"]:checked + .control-mark::before,
+  .control-input[type="checkbox"]:checked + .control-mark::after {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 12px;
+    height: 10px;
+    background-image: url(../images/checkbox_checked.svg);
+    /* background-color: #242424; */
+    content: "";
+  }
   /* Чекбокс конец */
 
 

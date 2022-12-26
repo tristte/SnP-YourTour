@@ -134,7 +134,7 @@
                 <form class="tour-constructor-form">
                     <label class="tour-constructor-form-label-username form-label-font" for="username">Имя
                         <input class="tour-constructor-form-input-username form-input-font" id="username" type="text"
-                            value="Введите Ваше имя">
+                            placeholder="Введите Ваше имя" required>
                     </label>
 
                     <label class="tour-constructor-form-label-email form-label-font" for="email">Email
@@ -144,7 +144,7 @@
 
                     <label class="tour-constructor-form-label-date-ot form-label-font" for="date-ot">Дата от
                         <input class="tour-constructor-form-input-date-ot form-input-font" id="date-ot" type="date"
-                            value="ДД.ММ.ГГГГ">
+                            placeholder="ДД.ММ.ГГГГ">
                     </label>
 
                     <label class="tour-constructor-form-label-direction form-label-font" for="direction">Направление
@@ -160,7 +160,7 @@
 
                     <label class="tour-constructor-form-label-date-do form-label-font" for="date-do">Дата до
                         <input class="tour-constructor-form-input-date-do form-input-font" id="date-do" type="date"
-                            value="ДД.ММ.ГГГГ">
+                            placeholder="ДД.ММ.ГГГГ">
                     </label>
 
                     <label class="tour-constructor-form-label-comment form-label-font" for="comment">Комментарий
@@ -187,16 +187,12 @@
 
                     <!-- Чекбокс -->
                     <label class="tour-constructor-form-label-checkbox-option form-label-checkbox-font"
-                        for="checkbox-option">
-                        <input class="tour-constructor-form-input-checkbox-option" id="checkbox-option" type="checkbox"
-                            name="tour-constructor-checkbox">
-
-                        <input class="visually-hidden control-input" type="checkbox" name="tour-constructor-checkbox"
+                        for="tour-constructor-checkbox">
+                        <input class="visually-hidden control-input" type="checkbox" name="tour-constructor-checkbox" id="tour-constructor-checkbox"
                             checked>
                         <span class="control-mark"></span>
 
-                        Нажимая кнопку, я принимаю условия <strong class="input-checkbox-option-strong">Лицензионного
-                            договора</strong>
+                        Нажимая кнопку, я принимаю условия <a class="input-checkbox-option-link" href="#">Лицензионного договора</a>
                     </label>
 
                     <div class="wrapper-button">
