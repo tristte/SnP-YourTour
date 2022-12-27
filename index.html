@@ -56,11 +56,11 @@
             <div class="wrapper-tour-choice-nav">
                 <!-- Список tour-choice-nav -->
                 <ul class="tour-choice-nav">
-                    <li class="tour-choice-nav-item tour-choice-nav-item-orange">Популярные</li>
-                    <li class="tour-choice-nav-item">Авторские</li>
-                    <li class="tour-choice-nav-item">Походы</li>
-                    <li class="tour-choice-nav-item">Сплавы</li>
-                    <li class="tour-choice-nav-item">Велопрогулки</li>
+                    <li class="tour-choice-nav-item"><label for="tour-choice-nav-item-radio" class="tour-choice-nav-item-label"><input type="radio" id="tour-choice-nav-item-radio" name="tour-choice-nav-item-radio" class="visually-hidden tour-choice-nav-item-radio">Популярные</input></label></li>
+                    <li class="tour-choice-nav-item"><input type="radio" name="tour-choice-nav-item-radio">Авторские</input></li>
+                    <li class="tour-choice-nav-item"><input type="radio" name="tour-choice-nav-item-radio">Походы</input></li>
+                    <li class="tour-choice-nav-item"><input type="radio" name="tour-choice-nav-item-radio">Сплавы</input></li>
+                    <li class="tour-choice-nav-item"><input type="radio" name="tour-choice-nav-item-radio">Велопрогулки</input></li>
                 </ul>
             </div>
 
@@ -139,28 +139,28 @@
 
                     <label class="tour-constructor-form-label-email form-label-font" for="email">Email
                         <input class="tour-constructor-form-input-email form-input-font" id="email" type="text"
-                            value="example@mail.com">
+                            placeholder="example@mail.com" required>
                     </label>
 
                     <label class="tour-constructor-form-label-date-ot form-label-font" for="date-ot">Дата от
                         <input class="tour-constructor-form-input-date-ot form-input-font" id="date-ot" type="date"
-                            placeholder="ДД.ММ.ГГГГ">
+                            placeholder="ДД.ММ.ГГГГ" required>
                     </label>
 
                     <label class="tour-constructor-form-label-direction form-label-font" for="direction">Направление
-                        <select class="tour-constructor-form-select-direction form-input-font" id="direction">
+                        <select class="tour-constructor-form-select-direction form-input-font" id="direction" required>
                             <option value="1">Куда хотите ехать</option>
                         </select>
                     </label>
 
                     <label class="tour-constructor-form-label-tel form-label-font" for="tel">Телефон
                         <input class="tour-constructor-form-input-tel form-input-font" id="tel" type="tel"
-                            value="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                            placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
                     </label>
 
                     <label class="tour-constructor-form-label-date-do form-label-font" for="date-do">Дата до
                         <input class="tour-constructor-form-input-date-do form-input-font" id="date-do" type="date"
-                            placeholder="ДД.ММ.ГГГГ">
+                            placeholder="ДД.ММ.ГГГГ" required>
                     </label>
 
                     <label class="tour-constructor-form-label-comment form-label-font" for="comment">Комментарий
@@ -354,9 +354,9 @@
 
                         <!-- Список travel-stories-list-social -->
                         <ul class="travel-stories-list-social">
-                            <li class="travel-stories-items-social">instagram</li>
-                            <li class="travel-stories-items-social">facebook</li>
-                            <li class="travel-stories-items-social">YouTube</li>
+                            <li class="travel-stories-items-social"><a class="travel-stories-items-social-link" href="#">instagram</a></li>
+                            <li class="travel-stories-items-social"><a class="travel-stories-items-social-link" href="#">facebook</a></li>
+                            <li class="travel-stories-items-social"><a class="travel-stories-items-social-link" href="#">YouTube</a></li>
                         </ul>
                     </div>
                 </li>
@@ -425,7 +425,7 @@
             <div class="wrapper-image-title-description">
                 <h3 class="time-travel-title">Пора в путешествие вместе с нами!</h3>
                 <p class="time-travel-description">Напиши на почту и узнай подробности на
-                    <strong class="time-travel-strong-description">yourtour@gmail.com</strong>
+                    <a class="time-travel-description-link" href="#">yourtour@gmail.com</a>
                 </p>
             </div>
         </section>

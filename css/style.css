@@ -86,7 +86,6 @@ body {
 
 .header-menu {
     display: flex;
-    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
     padding: 0px;
@@ -269,6 +268,7 @@ body {
 .tour-choice-nav {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .tour-choice-nav-item {
@@ -281,6 +281,26 @@ body {
     /* font-weight: 700;
     font-size: 23px;
     line-height: 28px; */
+}
+
+.tour-choice-nav-item-label {
+    position: relative;
+}
+
+.tour-choice-nav-item-label:has( > .tour-choice-nav-item-radio:checked) {
+    color: #EFA501;
+}
+
+.tour-choice-nav-item-label:has( > .tour-choice-nav-item-radio:checked)::after {
+    color: #EFA501;
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #EFA501; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: 0px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 2px; /* Высота линии */
+    cursor: pointer;
 }
 
 /* .tour-choice-nav-item:last-child {
@@ -586,6 +606,15 @@ body {
     margin-top: 8px;
 }
 
+.tour-constructor-form-select-direction:hover {
+    cursor: pointer;
+    background: #F4F0E9;
+}
+
+.tour-constructor-form-select-direction:valid {
+    color: #1B1F2B;
+}
+
 .tour-constructor-form-input-email {
     box-sizing: border-box;
 
@@ -602,6 +631,16 @@ body {
 
     margin-top: 8px;
 }
+
+.tour-constructor-form-input-email:hover {
+    cursor: pointer;
+    background: #F4F0E9;
+}
+
+.tour-constructor-form-input-email:valid {
+    color: #1B1F2B;
+}
+
 
 .tour-constructor-form-input-tel {
     box-sizing: border-box;
@@ -620,6 +659,16 @@ body {
     margin-top: 8px;
 }
 
+.tour-constructor-form-input-tel:hover {
+    cursor: pointer;
+    background: #F4F0E9;
+}
+
+.tour-constructor-form-input-tel:valid {
+    color: #1B1F2B;
+}
+
+
 .tour-constructor-form-input-date-ot {
     box-sizing: border-box;
 
@@ -637,6 +686,16 @@ body {
     margin-top: 8px;
 }
 
+.tour-constructor-form-input-date-ot:hover {
+    cursor: pointer;
+    background: #F4F0E9;
+}
+
+.tour-constructor-form-input-date-ot:valid {
+    color: #1B1F2B;
+}
+
+
 .tour-constructor-form-input-date-do {
     box-sizing: border-box;
 
@@ -652,6 +711,15 @@ body {
     border-radius: 10px;
 
     margin-top: 8px;
+}
+
+.tour-constructor-form-input-date-do:hover {
+    cursor: pointer;
+    background: #F4F0E9;
+}
+
+.tour-constructor-form-input-date-do:valid {
+    color: #1B1F2B;
 }
 
 .tour-constructor-form-textarea-comment {
@@ -725,8 +793,21 @@ body {
     margin: 0 auto;
 }
 
-.input-checkbox-option-strong {
+.input-checkbox-option-link {
     color: #1B1F2B;
+    text-decoration: none;
+    position: relative;
+}
+
+.input-checkbox-option-link:hover::after {
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #1B1F2B; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: 2px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+    cursor: pointer;
 }
 
 .tour-constructor-form-button-submit {
@@ -1057,6 +1138,27 @@ body {
     line-height: 142%;
 }
 
+.travel-stories-items-social-link:hover::after {
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #ffffff; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: 2px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+    cursor: pointer;
+
+    color: #ffffff;
+}
+
+.travel-stories-items-social-link {
+    position: relative;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 .wrapper-button-list-social {
     display: flex;
     justify-content: space-between;
@@ -1185,10 +1287,23 @@ body {
     margin: 0 auto;
 }
 
-.time-travel-strong-description {
+.time-travel-description-link {
     color: #1B1F2B;
+    text-decoration: none;
+
+    position: relative;
 }
 
+.time-travel-description-link:hover::after {
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #1B1F2B; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: 2px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+    cursor: pointer;
+}
 
 /* Футер */
 .your-tour-footer {
