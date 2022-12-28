@@ -348,8 +348,6 @@ body {
 .wrapper-card-image1 {
     background-image: url("../images/cardTour1.jpg");
     background-color: #5889b4;
-
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .travel-list-item {
@@ -838,9 +836,10 @@ body {
 .tour-constructor-form-button-submit:hover {
     background: #3B7E7B;
     color: #ffffff;
+    cursor: pointer;
 }
 
-..tour-constructor-form-button-submit:active {
+.tour-constructor-form-button-submit:active {
     background: #627F7E;
     color: #ffffff;
 }
@@ -871,6 +870,7 @@ body {
 .tour-constructor-form-button-reset:hover {
     background: #F1F3F2;
     color: #286562;
+    cursor: pointer;
 }
 
 .tour-constructor-form-button-reset:active {
@@ -1151,6 +1151,23 @@ body {
     color: #ffffff;
 }
 
+.social-link-orange:active::after {
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #EFA501; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: 2px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+    cursor: pointer;
+
+    color: #EFA501;
+}
+
+.social-link-orange {
+    color: #EFA501;
+}
+
 .travel-stories-items-social-link {
     position: relative;
 
@@ -1350,5 +1367,21 @@ body {
     font-size: 20px;
     line-height: 142%;
 
-    color: #1B1F2B;
+    color: #1B1F2B; 
+
+    text-decoration: none;
+
+    position: relative;
+}
+
+
+.footer-social-item-link:hover::after {
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #1B1F2B; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: 2px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+    cursor: pointer;
 }
