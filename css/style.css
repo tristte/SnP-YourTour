@@ -1151,6 +1151,15 @@ body {
     color: #ffffff;
 }
 
+
+.travel-stories-items-social-link {
+    position: relative;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 .social-link-orange:active::after {
     content: ''; /* Выводим пустое содержимое */
     position: absolute; /* Абсолютное позиционирование */
@@ -1167,14 +1176,6 @@ body {
 .social-link-orange {
     color: #EFA501;
 }
-
-.travel-stories-items-social-link {
-    position: relative;
-
-    color: #ffffff;
-    text-decoration: none;
-}
-
 
 .wrapper-button-list-social {
     display: flex;
