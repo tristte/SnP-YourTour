@@ -287,6 +287,22 @@ body {
     position: relative;
 }
 
+.tour-choice-nav-item-label:has( > .tour-choice-nav-item-radio:hover) {
+    color: #1B1F2B;
+}
+
+.tour-choice-nav-item-label:has( > .tour-choice-nav-item-radio:hover)::after {
+    color: #1B1F2B;
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    background: #1B1F2B; /* Цвет линии */
+    left: 0; /* Положение линии слева */
+    bottom: 0px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 2px; /* Высота линии */
+    cursor: pointer;
+}
+
 .tour-choice-nav-item-label:has( > .tour-choice-nav-item-radio:checked) {
     color: #EFA501;
 }
@@ -406,6 +422,20 @@ body {
     line-height: 122%;
 
     color: #ffffff;
+    position: relative;
+}
+
+.travel-list-item-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    background-image: url("../images/arrowLearnMore.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 1px;
+    right: -39px;
 }
 
 /* Вторая карточка */
@@ -610,8 +640,13 @@ body {
 }
 
 .tour-constructor-form-select-direction:valid {
-    color: #1B1F2B;
+    color: #A6A6A6;
 }
+
+.tour-constructor-form-option {
+    color:#A6A6A6;
+}
+
 
 .tour-constructor-form-input-email {
     box-sizing: border-box;
@@ -1207,6 +1242,27 @@ body {
     line-height: 122%;
 
     color: #ffffff;
+
+    position: relative;
+}
+
+.travel-stories-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    background-image: url("../images/arrowLearnMore.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 1px;
+    right: -39px;
+}
+
+.travel-stories-button:hover {
+    background: #286562;
+    width: 200px;
+    border-radius: 50px;
 }
 
 .wrapper-items-advantages {
