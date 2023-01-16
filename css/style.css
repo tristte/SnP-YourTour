@@ -808,6 +808,20 @@ body {
     cursor: pointer;
 }
 
+.input-checkbox-option-link:active{
+    color: #286562;
+}
+
+.input-checkbox-option-link:active::after{
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Положение линии слева */
+    bottom: 2px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+
+    background: #286562;
+}
 .tour-constructor-form-button-submit {
     display: flex;
 
@@ -1321,6 +1335,21 @@ body {
     width: 100%; /* Линия на ширину текста */
     height: 1px; /* Высота линии */
     cursor: pointer;
+}
+
+.time-travel-description-link:active{
+    color: #286562;
+}
+
+.time-travel-description-link:active::after{
+    content: ''; /* Выводим пустое содержимое */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Положение линии слева */
+    bottom: 2px; /* Положение линии */
+    width: 100%; /* Линия на ширину текста */
+    height: 1px; /* Высота линии */
+
+    background: #286562;
 }
 
 /* Футер */
