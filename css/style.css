@@ -413,7 +413,7 @@ body {
 .travel-list-item-button {
     text-decoration: none;
 
-    width: 120px;
+    width: 199px;
     height: 28px;
 
     font-style: normal;
@@ -422,10 +422,36 @@ body {
     line-height: 122%;
 
     color: #ffffff;
-    position: relative;
+    /* position: relative; */
 }
 
-.travel-list-item-button::after {
+.travel-list-item-button {
+    display: flex;
+}
+
+.arrow-svg {
+    margin-left: 5px;
+    justify-content: center;
+    width:20px;
+    height: 20px;
+}
+
+.travel-list-item-button:hover {
+    background: #286562;
+    border-radius: 50px;
+
+    padding: 7px 20px;
+}
+
+.travel-list-item-button:active {
+    background: #EFA501;;
+    border-radius: 50px;
+
+    padding: 7px 20px;
+}
+
+
+/* .travel-list-item-button::after {
     content: '';
     display: block;
     position: absolute;
@@ -436,7 +462,7 @@ body {
     background-position: center;
     top: 1px;
     right: -39px;
-}
+} */
 
 /* Вторая карточка */
 .wrapper-card-image2 {
@@ -1234,7 +1260,7 @@ body {
 .travel-stories-button {
     text-decoration: none;
 
-    width: 120px;
+    min-width: 120px;
     height: 28px;
 
     font-weight: 700;
@@ -1243,10 +1269,35 @@ body {
 
     color: #ffffff;
 
-    position: relative;
+    /* position: relative; */
 }
 
-.travel-stories-button::after {
+.travel-stories-button {
+    display: flex;
+}
+
+.arrow-svg {
+    margin-left: 5px;
+    justify-content: center;
+    width:20px;
+    height: 20px;
+}
+
+.travel-stories-button:hover {
+    background: #286562;
+    border-radius: 50px;
+
+    padding: 7px 20px;
+}
+
+.travel-stories-button:active {
+    background: #EFA501;;
+    border-radius: 50px;
+
+    padding: 7px 20px;
+}
+
+/* .travel-stories-button::after {
     content: '';
     display: block;
     position: absolute;
@@ -1259,11 +1310,9 @@ body {
     right: -39px;
 }
 
-.travel-stories-button:hover {
+.travel-stories-button:hover, .travel-stories-button:hover::after {
     background: #286562;
-    width: 200px;
-    border-radius: 50px;
-}
+} */
 
 .wrapper-items-advantages {
     display: flex;
