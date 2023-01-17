@@ -362,7 +362,7 @@ body {
 
 /* Первая карточка */
 .wrapper-card-image1 {
-    background-image: url("../images/cardTour1.jpg");
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/cardTour1.jpg");
     background-color: #5889b4;
 }
 
@@ -466,31 +466,31 @@ body {
 
 /* Вторая карточка */
 .wrapper-card-image2 {
-    background-image: url("../images/cardTour2.jpg");
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/cardTour2.jpg");
     background-color: #a58276;
 }
 
 /* Третья карточка */
 .wrapper-card-image3 {
-    background-image: url("../images/cardTour3.jpg");
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/cardTour3.jpg");
     background-color: #ebe8ef;
 }
 
 /* Четвертая карточка */
 .wrapper-card-image4 {
-    background-image: url("../images/cardTour4.jpg");
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/cardTour4.jpg");
     background-color: #24211c;
 }
 
 /* Пятая карточка */
 .wrapper-card-image5 {
-    background-image: url("../images/cardTour5.jpg");
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/cardTour5.jpg");
     background-color: #e1e9ec;
 }
 
 /* Шестая карточка */
 .wrapper-card-image6 {
-    background-image: url("../images/cardTour6.jpg");
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/cardTour6.jpg");
     background-color: #00444b;
 }
 
