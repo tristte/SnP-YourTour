@@ -371,8 +371,7 @@ body {
 }
 
 .wrapper-card-image1:hover {
-    transform: scale(1.2);
-    animation-timing-function: ease;
+    transform: scale(1.2); 
 }
 
 
@@ -475,8 +474,7 @@ body {
 }
 
 .wrapper-card-image2:hover {
-    transform: scale(1.2);
-    animation-timing-function: ease;
+    transform: scale(1.2); 
 }
 
 /* Третья карточка */
@@ -491,8 +489,7 @@ body {
 }
 
 .wrapper-card-image3:hover {
-    transform: scale(1.2);
-    animation-timing-function: ease;
+    transform: scale(1.2);  
 }
 
 /* Четвертая карточка */
@@ -507,8 +504,7 @@ body {
 }
 
 .wrapper-card-image4:hover {
-    transform: scale(1.2);
-    animation-timing-function: ease;
+    transform: scale(1.2);  
 }
 
 /* Пятая карточка */
@@ -523,8 +519,7 @@ body {
 }
 
 .wrapper-card-image5:hover {
-    transform: scale(1.2);
-    animation-timing-function: ease;
+    transform: scale(1.2);  
 }
 
 /* Шестая карточка */
@@ -540,7 +535,6 @@ body {
 
 .wrapper-card-image6:hover {
     transform: scale(1.2);
-    animation-timing-function: ease;
 }
 
 
@@ -1390,19 +1384,48 @@ body {
 }
 
 .travel-stories-items-background-1 {
-    background-image: url("../images/travelStory1.jpg");
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("../images/travelStory1.jpg");
     background-color: #cec2ba;
 }
 
+/* Анимация первой карточки */
+.travel-stories-items-background-1 {
+    transition: transform 300ms;
+}
+
+.travel-stories-items-background-1:hover {
+    transform: scale(1.2);
+}
+
 .travel-stories-items-background-2 {
-    background-image: url("../images/travelStory2.jpg");
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("../images/travelStory2.jpg");
     background-color: #162333;
 }
 
+/* Анимация второй карточки */
+.travel-stories-items-background-2 {
+    transition: transform 300ms;
+}
+
+.travel-stories-items-background-2:hover {
+    transform: scale(1.2);
+}
+
+
 .travel-stories-items-background-3 {
-    background-image: url("../images/travelStory3.jpg");
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("../images/travelStory3.jpg");
     background-color: #c2bbc2;
 }
+
+/* Анимация третьей карточки */
+.travel-stories-items-background-3 {
+    transition: transform 300ms;
+}
+
+.travel-stories-items-background-3:hover {
+    transform: scale(1.2);
+}
+
 
 .travel-stories-list {
     display: flex;
