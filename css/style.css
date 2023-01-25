@@ -686,6 +686,18 @@ body {
     color: #1B1F2B;
 }
 
+/* Выпадающий список начало */
+
+.wrapper-tour-constructor-form-dropdown {
+    background-image: url(../images/ic-dropdown.svg);
+}
+
+
+
+
+
+/* Выпадающий список конец */
+
 .tour-constructor-form-select-direction {
     box-sizing: border-box;
 
@@ -873,7 +885,7 @@ body {
     width: 20px;
     height: 20px;
   
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 4px;
   }
   
