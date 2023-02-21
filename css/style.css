@@ -28,7 +28,7 @@
 }
 
 html {
-    /* height: 100%; */
+    height: 100%;
 }
 
 
@@ -46,6 +46,9 @@ body {
 
     padding: 0;
     margin: 0;
+
+    /* width: 100vw;
+    overflow-x: hidden; */
 }
 
 .header-logo {}
@@ -239,7 +242,7 @@ body {
 
 /* Секция Выбери свой тур  */
 .tour-choice {
-    width: 1170px;
+    max-width: 1170px;
 
     margin: 0 auto;
 }
@@ -353,6 +356,167 @@ body {
     color: #EFA501;
 }
 
+
+/* Карточки Выбери свой тур */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-tour{
+    width: 370px;
+    height: 531px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+    
+}
+
+.card-tour-bg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(cardTour1.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 300ms ease;
+}
+
+
+.card-tour-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-tour-content h3{
+    width: 270px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+    color: #ffffff;
+}
+.card-tour-content p{
+    
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    color: #ffffff;
+    margin-top: 16px;
+}
+.card-tour-content-bottom a{
+    text-decoration: none;
+    width: 199px;
+    height: 28px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    color: #ffffff;
+    transition: 300ms ease;
+    padding: 7px 20px;
+    border-radius: 50px;
+    margin-left: -20px;
+
+}
+
+.card-tour:hover .card-tour-bg1 {
+    transform: scale(1.2);
+}
+.card-tour:hover .card-tour-content-bottom a {
+    background-color: #286562;
+    padding: 7px 20px;
+}
+
+/* Вторая карточка */
+
+.card-tour-bg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(cardTour2.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 300ms ease;
+}
+.card-tour:hover .card-tour-bg2 {
+    transform: scale(1.2);
+}
+
+/* Третья карточка */
+
+.card-tour-bg3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(cardTour3.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 300ms ease;
+}
+
+.card-tour:hover .card-tour-bg3 {
+    transform: scale(1.2);
+}
+
+/* Четвертая карточка */
+
+.card-tour-bg4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(cardTour4.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 300ms ease;
+}
+
+.card-tour:hover .card-tour-bg4 {
+    transform: scale(1.2);
+}
+
+/* Пятая карточка */
+
+.card-tour-bg5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(cardTour5.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 300ms ease;
+}
+
+.card-tour:hover .card-tour-bg5 {
+    transform: scale(1.2);
+}
+
+/* Шестая карточка */
+
+.card-tour-bg6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url(cardTour6.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 300ms ease;
+}
+
+.card-tour:hover .card-tour-bg6 {
+    transform: scale(1.2);
+}
+
+/* 
 /* Контейнер для всех карточек */
 .card-container {
     display: flex;
@@ -396,6 +560,14 @@ body {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1024px) {
+    .wrapper-card {
+        grid-template-rows: 50px 43px 16px 24px 320px 28px 50px;
+        grid-template-columns: 50px 350px 50px;
+    }
+}
+
+
 /* Первая карточка */
 .wrapper-card-image1 {
     background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("../images/cardTour1.jpg");
@@ -433,9 +605,6 @@ body {
 }
 
 .travel-list-item-title {
-    width: 270px;
-    height: 86px;
-
     font-weight: 500;
     font-size: 35px;
     line-height: 122%;
@@ -446,9 +615,6 @@ body {
 }
 
 .travel-list-item-description {
-    width: 270px;
-    height: 24px;
-
     font-weight: 400;
     font-size: 17px;
     line-height: 142%;
@@ -460,16 +626,12 @@ body {
 .travel-list-item-button {
     text-decoration: none;
 
-    width: 199px;
-    height: 28px;
-
     font-style: normal;
     font-weight: 700;
     font-size: 23px;
     line-height: 122%;
 
-    color: #ffffff;
-    /* position: relative; */
+    color: #ffffff;  
 }
 
 .travel-list-item-button {
@@ -573,7 +735,7 @@ body {
 
 .wrapper-card-image6:hover {
     transform: scale(1.2);
-}
+} */
 
 
 /* Секция tour-constructor  */
@@ -634,7 +796,7 @@ body {
     background: #ffffff;
     border-radius: 50px;
 
-    width: 1170px;
+    max-width: 1170px;
     height: 986px;
 }
 
@@ -740,12 +902,12 @@ body {
 
     margin-top: 8px;
 
-    /* убираем стандартную галку в выпадающем списке */
+    /* убирает стандартную галку в выпадающем списке */
     appearance: none;
     -webkit-appearance: none;
     /* mozilla FF */
 
-    /* рисуем свою галку в выпадающем списке */
+    /* рисует свою галку в выпадающем списке */
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2226%22%20height%3D%2226%22%20viewBox%3D%220%200%2026%2026%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M13%2019.4141L4.29289%2010.707C3.90236%2010.3164%203.90237%209.68326%204.29289%209.29274C4.68341%208.90221%205.31658%208.90221%205.7071%209.29274L13%2016.5856L20.2929%209.29274C20.6834%208.90221%2021.3166%208.90221%2021.7071%209.29274C22.0976%209.68326%2022.0976%2010.3164%2021.7071%2010.707L13%2019.4141Z%22%20fill%3D%22%231B1F2B%22%2F%3E%0A%3C%2Fsvg%3E%0A");
     background-repeat: no-repeat;
     background-position: right 0.7rem top 50%;
@@ -756,7 +918,7 @@ body {
     cursor: pointer;
     background: #F4F0E9;
 
-    /* рисуем свою галку */
+    /* рисует свою галку */
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2226%22%20height%3D%2226%22%20viewBox%3D%220%200%2026%2026%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M13%2019.4141L4.29289%2010.707C3.90236%2010.3164%203.90237%209.68326%204.29289%209.29274C4.68341%208.90221%205.31658%208.90221%205.7071%209.29274L13%2016.5856L20.2929%209.29274C20.6834%208.90221%2021.3166%208.90221%2021.7071%209.29274C22.0976%209.68326%2022.0976%2010.3164%2021.7071%2010.707L13%2019.4141Z%22%20fill%3D%22%231B1F2B%22%2F%3E%0A%3C%2Fsvg%3E%0A");
     background-repeat: no-repeat;
     background-position: right 0.7rem top 50%;
@@ -886,7 +1048,7 @@ body {
     gap: 10px;
 
     height: 152px;
-    width: 1030px;
+    max-width: 1030px;
 
     background: #F9F7F4;
 
@@ -1427,23 +1589,6 @@ body {
     padding: 7px 20px;
 }
 
-/* .travel-stories-button::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 23px;
-    height: 22px;
-    background-image: url("../images/arrowLearnMore.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 1px;
-    right: -39px;
-}
-
-.travel-stories-button:hover, .travel-stories-button:hover::after {
-    background: #286562;
-} */
-
 .wrapper-items-advantages {
     display: flex;
     flex-direction: column;
@@ -1458,7 +1603,7 @@ body {
 
     padding: 60px;
 
-    width: 1170px;
+    max-width: 1170px;
     height: 567px;
 
     border-radius: 50px;
@@ -1532,7 +1677,7 @@ body {
     padding: 0px;
     gap: 30px;
 
-    width: 771px;
+    max-width: 771px;
     height: 370px;
 
     margin: 0 auto;
